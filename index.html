@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://view.jquerymobile.com/1.3.2/dist/demos/widgets/panels/panel-fixed.html -->
+<html class="ui-mobile"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/panels/panel-fixed.html">--><base href=".">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>Fixed header</title>
+    <link rel="stylesheet" href="./css/jquery.mobile.min.css">
+    <link rel="stylesheet" href="./css/jqm-demos.css">
+	<link rel="shortcut icon" href="http://view.jquerymobile.com/1.3.2/dist/demos/favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<script src="./js/jquery.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.mobile.min.js"></script>
+    <style>
+        .nav-search .ui-btn-up-a {
+            background-image: none;
+            background-color: #333;
+        }
+        .nav-search .ui-btn-inner {
+            border-top: 1px solid #888;
+            border-color: rgba(255, 255, 255, .1);
+        }
+        .nav-search .ui-btn.ui-first-child {
+            border-top-width: 0;
+            background: #111;
+        }
+        .userform {
+			padding: .8em 1.2em;
+		}
+        .userform h2 {
+			color: #555;
+			margin: 0.3em 0 .8em 0;
+			padding-bottom: .5em;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+		}
+        .userform label {
+			display: block;
+			margin-top: 1.2em;
+		}
+        .ui-grid-a {
+			margin-top: 1em;
+			padding-top: .8em;
+			margin-top: 1.4em;
+			border-top: 1px solid rgba(0,0,0,.1);
+		}
+    </style>
+</head>
+<body class="ui-mobile-viewport ui-overlay-c" cz-shortcut-listen="true">
+<div data-role="page" class="jqm-demos ui-responsive-panel ui-page ui-page-header-fixed ui-page-footer-fixed ui-page-panel ui-body-c ui-page-active" id="panel-fixed-page1" data-url="panel-fixed-page1" tabindex="0" style="padding-top: 44px; padding-bottom: 44px; min-height: 530px;">
+
+    <div data-role="header" data-theme="f" data-position="fixed" class="ui-header ui-bar-f ui-header-fixed slidedown ui-panel-content-fixed-toolbar ui-panel-animate ui-panel-content-fixed-toolbar-closed" role="banner">
+        <h1 class="ui-title" role="heading" aria-level="1">Fixed header</h1>
+        <a href="index.html#nav-panel" data-icon="bars" data-iconpos="notext" class="ui-btn-left ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-f" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="f" title="Menu"><span class="ui-btn-inner"><span class="ui-btn-text">Menu</span><span class="ui-icon ui-icon-bars ui-icon-shadow">&nbsp;</span></span></a>
+        <a href="index.html#add-form" data-icon="gear" data-iconpos="notext" class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext ui-btn-up-f" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="f" title="Add"><span class="ui-btn-inner"><span class="ui-btn-text">Add</span><span class="ui-icon ui-icon-gear ui-icon-shadow">&nbsp;</span></span></a>
+    </div><!-- /header -->
+
+    <div class="ui-panel-content-wrap ui-body-c ui-panel-animate ui-panel-content-wrap-closed" style=""><div data-role="content" class="jqm-content ui-content" role="main">
+
+    	<h1>Panels</h1>
+
+		<h2>Fixed positioning</h2>
+
+        <p>This is a typical page that has two buttons in the header bar that open panels. The left panel has the reveal display mode. The right panel opens as overlay. For both panels we set <code>data-position-fixed="true"</code>. We also set position fixed for the header and footer on this page.</p>
+
+        <p>The left panel contains a long menu to demonstrate that the framework will check the panel contents height and unfixes the panel so its content can be scrolled. In the right panel there is a short form that shows the fixed positioning.</p>
+
+		<h2>Responsive</h2>
+
+        <p>To make this responsive, you can make the page re-flow at wider widths. This allows both the reveal panel menu and page to be used together when more space is available. This behavior is controlled by CSS media queries. You can create a custom one for a specific breakpoint or use the breakpoint preset by adding the <code>class="ui-responsive-panel"</code> to the page container. We have added this class on this demo page.</p>
+
+        <a href="JQMPanel/" class="jqm-button ui-btn ui-shadow ui-btn-corner-all ui-mini ui-btn-inline ui-btn-icon-left ui-btn-up-c" data-ajax="false" data-role="button" data-mini="true" data-inline="true" data-icon="arrow-l" data-iconpos="left" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c"><span class="ui-btn-inner"><span class="ui-btn-text">Back to Panels</span><span class="ui-icon ui-icon-arrow-l ui-icon-shadow">&nbsp;</span></span></a>
+
+		<div data-demo-html="#panel-fixed-page1" data-demo-css="true"></div><div class="jqm-view-source-link"><a href="index.html#popupDemo" data-rel="popup" data-role="button" data-icon="arrow-u" data-mini="true" data-inline="true" data-shadow="false" data-corners="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-btn-corner-all ui-mini ui-btn-inline ui-btn-icon-left ui-btn-up-c" aria-haspopup="true" aria-owns="popupDemo" aria-expanded="false"><span class="ui-btn-inner"><span class="ui-btn-text">View Source</span><span class="ui-icon ui-icon-arrow-u ui-icon-shadow">&nbsp;</span></span></a></div><!--/demo-html -->
+
+	</div></div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed" data-theme="f" class="ui-footer ui-bar-f ui-footer-fixed slideup ui-panel-content-fixed-toolbar ui-panel-animate ui-panel-content-fixed-toolbar-closed" role="contentinfo">
+    	<h4 class="ui-title" role="heading" aria-level="1">Fixed footer</h4>
+    </div><!-- /footer -->
+
+	<div data-role="panel" data-position-fixed="true" data-theme="a" id="nav-panel" class="ui-panel ui-panel-position-left ui-panel-display-reveal ui-body-a ui-panel-animate ui-panel-closed ui-panel-fixed">
+
+		<div class="ui-panel-inner"><ul data-role="listview" data-theme="a" class="nav-search ui-listview">
+            <li data-icon="delete" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-first-child ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="panel-fixed.html#" data-rel="close" class="ui-link-inherit">Close menu</a></div><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Accordion</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">AJAX Navigation</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Autocomplete</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Buttons</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Checkboxes</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Collapsibles</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Controlgroup</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Dialogs</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Fixed toolbars</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Flip switch toggle</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Footer toolbar</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Form elements</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Grids</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Header toolbar</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Icons</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Links</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Listviews</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Loader overlay</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Navbar</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Navbar, persistent</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Pages</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">New</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Popup</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Radio buttons</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Select</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Slider, single</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-a"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">New</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">New</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">New</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Text inputs &amp; textarea</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+                <li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="a" class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li ui-last-child"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="index.html#panel-fixed-page2" class="ui-link-inherit">Transitions</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+		</ul></div>
+
+	</div><!-- /panel -->
+
+	<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="b" id="add-form" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-b ui-panel-fixed ui-panel-animate ui-panel-closed">
+
+        <div class="ui-panel-inner"><form class="userform">
+
+        	<h2>Login</h2>
+
+            <label for="name" class="ui-input-text">Username:</label>
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini ui-input-has-clear"><input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true" class="ui-input-text ui-body-c"><a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/panels/panel-fixed.html#" class="ui-input-clear ui-btn ui-btn-up-c ui-shadow ui-btn-corner-all ui-mini ui-btn-icon-notext ui-input-clear-hidden" title="clear text" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="delete" data-iconpos="notext" data-theme="c" data-mini="true"><span class="ui-btn-inner"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></span></a></div>
+
+            <label for="password" class="ui-input-text">Password:</label>
+            <div class="ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-c ui-mini ui-input-has-clear"><input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" class="ui-input-text ui-body-c"><a href="http://view.jquerymobile.com/1.3.2/dist/demos/widgets/panels/panel-fixed.html#" class="ui-input-clear ui-btn ui-btn-up-c ui-shadow ui-btn-corner-all ui-mini ui-btn-icon-notext ui-input-clear-hidden" title="clear text" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="delete" data-iconpos="notext" data-theme="c" data-mini="true"><span class="ui-btn-inner"><span class="ui-btn-text">clear text</span><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></span></a></div>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a"><a href="index.html#" data-rel="close" data-role="button" data-theme="c" data-mini="true" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-mini ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Cancel</span></span></a></div>
+                <div class="ui-block-b"><a href="index.html#" data-rel="close" data-role="button" data-theme="b" data-mini="true" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-shadow ui-btn-corner-all ui-mini ui-btn-up-b"><span class="ui-btn-inner"><span class="ui-btn-text">Save</span></span></a></div>
+			</div>
+        </form></div>
+
+	</div><!-- /panel -->
+
+<div class="ui-panel-dismiss" data-panelid="nav-panel"></div><div class="ui-panel-dismiss" data-panelid="add-form"></div></div><!-- /page -->
+
+<div data-role="page" id="panel-fixed-page2" data-url="panel-fixed-page2" tabindex="0" class="ui-page ui-body-c" style="min-height: 438px;">
+
+    <div data-role="header" data-theme="f" class="ui-header ui-bar-f" role="banner">
+        <h1 class="ui-title" role="heading" aria-level="1">Landing page</h1>
+    </div><!-- /header -->
+
+    <div data-role="content" class="jqm-content ui-content" role="main">
+
+        <p>This is just a landing page.</p>
+
+        <a href="index.html#panel-fixed-page1" data-role="button" data-inline="true" data-mini="true" data-icon="back" data-iconpos="left" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-mini ui-btn-inline ui-btn-icon-left ui-btn-up-c"><span class="ui-btn-inner"><span class="ui-btn-text">Back</span><span class="ui-icon ui-icon-back ui-icon-shadow">&nbsp;</span></span></a>
+
+    </div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div></body></html>
